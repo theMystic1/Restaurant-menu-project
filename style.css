@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  --clr-primary-5: #49a6e9;
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-gold: #c59d5f;
+  --clr-black: #222;
+}
+
+body {
+  background-color: var(--clr-grey-10);
+  font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  padding: 8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hhhh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 3.2rem;
+  letter-spacing: 0.5rem;
+}
+
+.underline {
+  height: 0.3rem;
+  width: 10rem;
+  background-color: var(--clr-gold);
+  margin-bottom: 4rem;
+}
+
+.btn {
+  font-size: 1.4rem;
+  color: var(--clr-gold);
+  padding: 0.8rem 2rem;
+  letter-spacing: 0.2rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid var(--clr-gold);
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 600ms;
+}
+
+.btn:hover {
+  background-color: var(--clr-gold);
+  color: var(--clr-grey-10);
+  border: 0.1rem solid var(--clr-grey-10);
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.menu-items,
+.h-price {
+  display: flex;
+}
+
+.menu-items {
+  margin-top: 5.6rem;
+}
+.h-price {
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1rem dotted var(--clr-grey-2);
+  padding-bottom: 1rem;
+}
+.img {
+  width: 20rem;
+  height: 15rem;
+  margin-right: 2rem;
+  border: 0.5rem solid var(--clr-gold);
+  border-radius: 1rem;
+}
+
+.header {
+  font-size: 1.6rem;
+  letter-spacing: 0.4rem;
+  color: var(--clr-grey-1);
+}
+
+.desc {
+  font-size: 1.4rem;
+  color: var(--clr-grey-5);
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  letter-spacing: 0.4rem;
+  color: var(--clr-gold);
+  font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 68em) {
+  .img {
+    width: 18rem;
+  }
+
+  .header {
+    font-size: 1.48rem;
+    letter-spacing: 0.28rem;
+  }
+
+  .desc {
+    font-size: 1.28rem;
+  }
+}
+@media (max-width: 64em) {
+  .section {
+    padding: 10rem 15rem;
+  }
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .img {
+    width: 22rem;
+  }
+
+  .header {
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .desc {
+    font-size: 1.4rem;
+  }
+
+  .menu-items {
+    max-width: 70rem;
+  }
+
+  .menu-details {
+    max-width: 35rem;
+  }
+}
+@media (max-width: 52em) {
+  .section {
+    padding: 8rem;
+  }
+}
+@media (max-width: 43em) {
+  .section {
+    padding: 5rem;
+  }
+
+  .btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 36em) {
+  .section {
+    padding: 8rem 2rem;
+  }
+  .img {
+    width: 17rem;
+    height: 14rem;
+  }
+  .header {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .price {
+    font-size: 1.4rem;
+    letter-spacing: normal;
+  }
+}
+@media (max-width: 27em) {
+  .section {
+    padding: 5rem;
+  }
+
+  .heading {
+    font-size: 2.4rem;
+  }
+  .img {
+    width: 18rem;
+    margin-top: 2rem;
+  }
+
+  .desc {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    max-width: 20rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .menu-items {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1rem dotted var(--clr-grey-2);
+    padding-bottom: 2rem;
+  }
+
+  .h-price {
+    border: none;
+  }
+}
+@media (max-width: 68em) {
+}
